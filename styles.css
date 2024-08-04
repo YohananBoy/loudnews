@@ -8,18 +8,48 @@
     src: url(fontes/Valorant\ Font.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url(fontes/Roboto-Regular.ttf) format('truetype');
+}
+
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: rgb(223,218,192);
+    background-color: rgb(21,21,21);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header img{
+    position: absolute;
+}
+
+header div {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}  
+
 .cabeçalho {
     font-family: Valorant;
 }
 
 h2 {
     font-family: Valorant;
-}
-
-* {
-    font-family: Roboto;
-    color: rgb(223,218,192);
-    background-color: rgb(21,21,21);
 }
 
 a {
@@ -29,14 +59,6 @@ a {
 }
 
 a:hover {
-    color: rgb(63,205,55);
-}
-
-figcaption{
-    transition: color 0.3s;
-}
-
-figcaption:hover {
     color: rgb(63,205,55);
 }
 
@@ -50,6 +72,27 @@ figcaption:hover {
     border-color: rgb(63,205,55);
 }
 
-.arredondado {
+.news {
     border-radius: 20px;
+    transition: 0.3s;
+}
+
+.news:hover {
+    width: 430px;
+    
+}
+section v{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+section div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+figcaption {
+    text-align: center;
 }
