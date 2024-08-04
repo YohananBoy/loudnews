@@ -8,34 +8,48 @@
     src: url(fontes/Valorant\ Font.ttf) format('truetype');
 }
 
-  .cabeçalho {
+.cabeçalho {
     font-family: Valorant;
-  }
+}
 
-  h2 {
+h2 {
     font-family: Valorant;
-  }
+}
 
-  * {
+* {
     font-family: Roboto;
     color: rgb(223,218,192);
     background-color: rgb(21,21,21);
-  }
+}
 
-  a {
+a {
     color: rgb(223,218,192);
     text-decoration: none;
     transition: color 0.3s;
-  }
+}
 
-  a:hover {
+a:hover {
     color: rgb(63,205,55);
-  }
+}
 
-  figcaption{
+figcaption{
     transition: color 0.3s;
-  }
+}
 
-  figcaption:hover {
+figcaption:hover {
     color: rgb(63,205,55);
-  }
+}
+
+.borda {
+    border: 5px solid rgb(223,218,192); 
+    border-radius: 10px; 
+    transition: border-color 0.3s;
+}
+
+.borda:hover{
+    border-color: rgb(63,205,55);
+}
+
+.arredondado {
+    border-radius: 20px;
+}
