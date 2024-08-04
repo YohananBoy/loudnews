@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Sono';
+    src: url('fontes/Sono-Medium.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Valorant';
+    src: url(fontes/Valorant\ Font.ttf) format('truetype');
+}
+
+  .cabeçalho {
+    font-family: Valorant;
+  }
+
+  h2 {
+    font-family: Valorant;
+  }
+
+  * {
+    font-family: Roboto;
+    color: rgb(223,218,192);
+    background-color: rgb(21,21,21);
+  }
+
+  a {
+    color: rgb(223,218,192);
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: rgb(63,205,55);
+  }
+
+  figcaption{
+    transition: color 0.3s;
+  }
+
+  figcaption:hover {
+    color: rgb(63,205,55);
+  }
