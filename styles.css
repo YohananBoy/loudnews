@@ -97,11 +97,6 @@ figcaption {
     text-align: center;
 }
 
-.teste {
-    font-family: Roboto;
-    font-size: 1.3rem;
-}
-
 .imagens {
     width: 25rem;
     height: auto;
@@ -110,4 +105,14 @@ figcaption {
 .esquerda{
     display: flex;
     align-items: center;
+}
+
+.tempo {
+    display: flex;
+    list-style: none;
+}
+
+.tempo li {
+    font-family: Roboto;
+    font-size: 1.3rem;
 }
