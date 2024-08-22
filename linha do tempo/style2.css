@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Sono';
-    src: url('fontes/Sono-Medium.ttf') format('truetype');
+    src: url('../fontes/Sono-Medium.ttf') format('truetype');
   }
 
 @font-face {
     font-family: 'Valorant';
-    src: url(fontes/Valorant\ Font.ttf) format('truetype');
+    src: url(../fontes/Valorant\ Font.ttf) format('truetype');
 }
 
 @font-face {
@@ -72,27 +72,21 @@ a:hover {
     border-color: rgb(63,205,55);
 }
 
-.news {
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.news:hover {
-    width: 430px;
-    
-}
-section v{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-}
-section div{
+.tempo {
     flex: 1;
     display: flex;
-    justify-content: center;
+    flex-wrap:wrap;
+    gap: 20px;
+    justify-content: flex-center;
 }
 
-figcaption {
-    text-align: center;
+.tempo img {
+    width: 30rem;
+    height:auto;
 }
+
+.tempo p {
+    justify-content: center;
+    display: inline;
+}
+
