@@ -142,6 +142,9 @@ h3 {
 .wiki ul{
     margin: 20px;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .wiki h3{
@@ -172,13 +175,12 @@ h3 {
 .wiki-info {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease;
-    background-color: #f9f9f9;
-    padding: 0 10px;
+    transition: 0.3s;
+
+    padding: 10px;
     opacity: 0;
 }
-
-.wiki-li .active .wiki-info {
-    max-height: 300px; /* Ajuste conforme a quantidade de conteúdo */
+.active div {
+    max-height: 300px;
     opacity: 1;
 }
