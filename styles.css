@@ -1,22 +1,34 @@
-<!-- 
+/*
 preto: rgb(21,21,21); 
 amarelin: rgb(223,218,192);
 verdin: rgb(63,205,55);
--->
-
-@font-face {
-    font-family: 'Sono';
-    src: url(fontes/Sono-Medium.ttf) format('truetype');
-  }
-
-@font-face {
-    font-family: 'Valorant';
-    src: url(fontes/Valorant\ Font.ttf) format('truetype');
+*/
+@font-face { /* por algum motivo eu tenho que importar essa fonte duas vezes para ela funcionar, nao me pergunte o porque */
+    font-family: 'Tungsten';
+    src: url(fontes/FontsFree-Net-Tungsten-Bold.ttf) format('truetype');
+    font-weight: normal;
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url(fontes/Roboto-Regular.ttf) format('truetype');
+    font-family: 'Tungsten';
+    src: url(fontes/FontsFree-Net-Tungsten-Bold.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Valorant';
+    src: url(fontes/Valorant-Font.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'DINNextW1G';
+    src: url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot");
+    src: url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.svg#DINNextW1G-Regular")format("svg");
 }
 
 * {
@@ -27,7 +39,7 @@ verdin: rgb(63,205,55);
 html {
     background-color: rgb(21,21,21);
     color: rgb(223,218,192);
-    font-family: 'Roboto';
+    font-family: 'DINNextW1G';
 }
 
 .header {
@@ -51,7 +63,7 @@ header figure img{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-family: Valorant;
+    font-family: 'Valorant';
     font-size: 1.3rem;
 }
 
@@ -85,21 +97,20 @@ header figure img{
 h2 {
     font-family: Valorant;
     font-size: 2rem;
+    margin: 20px
 }
 
 h3 {
-    font-family: Valorant;
-    font-size: 1.2rem;
+    font-family: Tungsten;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
 }
 
 .noticias {
     display: flex;
     flex-direction: column;
     margin-bottom: 130px;
-}
-
-.noticias h2 {
-    margin: 20px
 }
 
 .noticias img {
@@ -136,7 +147,7 @@ h3 {
 }
 
 .wiki h2 {
-    margin: 20px
+    margin-left: 50px
 }
 
 .wiki ul{
@@ -183,4 +194,115 @@ h3 {
 .active div {
     max-height: 300px;
     opacity: 1;
+}
+
+.wiki-historico h2 {
+    margin-left: 50px
+}
+
+.wiki-historico ul {
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.wiki-historico li {
+    margin: 20px;
+}
+
+.wiki-historico span {
+    padding: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 3px;
+    border: rgb(63,205,55) 2px solid;
+    border-radius: 8px;
+}
+
+.wiki-historico img {
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.section-contato {
+    display: flex;
+    align-items: center;
+    margin-bottom: 300px;
+}
+
+.contato {
+    margin-left: 40px;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: 20px;
+}
+
+.contato form input, .contato form textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: transparent;
+    border: none;
+    border-bottom: rgb(223,218,192) 2px solid;
+    padding: 10px;
+    transition: .2s;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.contato form input:focus, .contato form textarea:focus {
+    border-bottom: rgb(63,205,55) 3px solid;
+}
+
+.contato form button {
+    font-family: Valorant   ;
+    border: transparent 2px solid;
+    border-radius: 17px;
+    width: 120px;
+    padding: 5px;
+    background-color: transparent;
+    color: rgb(63,205,55);
+    transition: 0.2s;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.contato form button:hover {
+    border: rgb(63,205,55) 2px solid;
+}
+
+.barra {
+    height: 2px;
+    width: 200px;
+    background-color: rgb(71,71,71);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.barrah {
+    height: 300px;
+    width: 2px;
+    background-color: rgb(71,71,71);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.informacoes {
+    margin-left: 20px;
+}
+
+.informacoes h3{
+    font-size: 3rem;
+}
+
+.informacoes p {
+    font-size: 2rem;
 }
