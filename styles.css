@@ -1,6 +1,12 @@
+<!-- 
+preto: rgb(21,21,21); 
+amarelin: rgb(223,218,192);
+verdin: rgb(63,205,55);
+-->
+
 @font-face {
     font-family: 'Sono';
-    src: url('fontes/Sono-Medium.ttf') format('truetype');
+    src: url(fontes/Sono-Medium.ttf) format('truetype');
   }
 
 @font-face {
@@ -14,85 +20,165 @@
 }
 
 * {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    color: rgb(223,218,192);
-    background-color: rgb(21,21,21);
+    margin: 0;
+    padding: 0;
 }
 
-header {
+html {
+    background-color: rgb(21,21,21);
+    color: rgb(223,218,192);
+    font-family: 'Roboto';
+}
+
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    position: relative;
 }
 
-header img{
-    position: absolute;
-}
-
-header div {
-    flex: 1;
+header figure {
+    margin: 20px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+}
+
+header figure img{
+    width: 400px;
 }
 
 .menu {
-    list-style: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Valorant;
+    font-size: 1.3rem;
+}
+
+.menu ul {
     display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-}  
-
-.cabeçalho {
-    font-family: Valorant;
+    gap: 40px;
+    list-style: none;
 }
 
-h2 {
-    font-family: Valorant;
-}
-
-a {
-    color: rgb(223,218,192);
+.menu a {
     text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:hover {
-    color: rgb(63,205,55);
-}
-
-.borda {
-    border: 5px solid rgb(223,218,192); 
-    border-radius: 10px; 
-    transition: border-color 0.3s;
-}
-
-.borda:hover{
-    border-color: rgb(63,205,55);
-}
-
-.news {
+    color: rgb(223,218,192);
+    border: transparent 2px solid;
+    padding: 10px;
     border-radius: 20px;
     transition: 0.3s;
 }
 
-.news:hover {
-    width: 430px;
-    
-}
-section v{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.menu li .destaque {
+    color: rgb(63,205,55);
+    border: rgb(63,205,55) 2px solid;
     padding: 10px;
+    border-radius: 20px;
 }
-section div{
-    flex: 1;
+
+.menu a:hover {
+    color: rgb(63,205,55);
+    border: rgb(63,205,55) 2px solid;
+}
+
+h2 {
+    font-family: Valorant;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: Valorant;
+    font-size: 1.2rem;
+}
+
+.noticias {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 130px;
+}
+
+.noticias h2 {
+    margin: 20px
+}
+
+.noticias img {
+    width: 400px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.noticias img:hover {
+    transform: scale(1.1);
+}
+
+.noticias ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.noticias li {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.noticias p {
     display: flex;
     justify-content: center;
 }
 
-figcaption {
+.noticias a {
+    text-decoration: none;
+    color: rgb(223,218,192);
+}
+
+.wiki h2 {
+    margin: 20px
+}
+
+.wiki ul{
+    margin: 20px;
+    list-style: none;
+}
+
+.wiki h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.wiki img {
+    width: 200px;
+}
+
+.wiki-li {
+    width: 250px;
     text-align: center;
+    margin-bottom: 20px;
+}
+
+.wiki-img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.wiki-img:hover {
+    transform: scale(1.05);
+}
+
+.wiki-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    background-color: #f9f9f9;
+    padding: 0 10px;
+    opacity: 0;
+}
+
+.wiki-li .active .wiki-info {
+    max-height: 300px; /* Ajuste conforme a quantidade de conteúdo */
+    opacity: 1;
 }

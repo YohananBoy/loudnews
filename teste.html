@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki com Imagem e Texto Expansível</title>
+    <style>
+        .person-container {
+            width: 250px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .person-image {
+            width: 100%;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .person-image:hover {
+            transform: scale(1.05);
+        }
+
+        .person-info {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            background-color: #f9f9f9;
+            padding: 0 10px;
+            opacity: 0;
+        }
+
+        .person-container.active .person-info {
+            max-height: 300px; /* Ajuste conforme a quantidade de conteúdo */
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="person-container">
+    <img src="sua-imagem.jpg" alt="Pessoa" class="person-image" onclick="toggleInfo(this)">
+    <div class="person-info">
+        <h3>Nome da Pessoa</h3>
+        <p>Idade: 35 anos</p>
+        <p>Profissão: Engenheiro de Software</p>
+        <p>Descrição: Apaixonado por tecnologia e inovação...</p>
+    </div>
+</div>
+
+<script>
+    function toggleInfo(img) {
+        const container = img.closest('.person-container');
+        container.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>

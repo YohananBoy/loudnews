@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Loud News - Wiki</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <figure>
+                <img src="imagens/logo.png" alt="">
+            </figure>
+            
+            <div class="centro">
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#" class="destaque">Wiki</a></li>
+                        <li><a href="#">Linha do Tempo</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="wiki">
+            <h2>WIKI</h2>
+            <ul>
+                <li class="wiki-li">
+                    <h3>Cauazin</h3>
+                    <img src="imagens/Line/cauazin.png" alt="" class="wiki-img" onclick="toggleInfo(this)">
+
+                    <div class="wiki-info">
+                        <h3>Nome da Pessoa</h3>
+                        <p>Idade: 35 anos</p>
+                        <p>Profissão: Engenheiro de Software</p>
+                        <p>Descrição: Apaixonado por tecnologia e inovação...</p>
+                    </div>
+                </li>
+                <li>
+                    <h3>Less</h3>
+                    <img src="imagens/Line/less-loud.png" alt="">
+                </li>
+                <li>
+                    <h3>Pancada</h3>
+                    <img src="imagens/Line/pancada.png" alt="">
+                </li>
+                <li>
+                    <h3>Saadhak 👑</h3>
+                    <img src="imagens/Line/saadhak.png" alt="">
+                </li>
+                <li>
+                    <h3>Tuyz</h3>
+                    <img src="imagens/Line/tuyz.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+        <script>
+            function toggleInfo(img) {
+                const container = img.closest('.wiki-li');
+                container.classList.toggle('active');
+            }
+        </script>
+    </main>
+
+    <footer>
+        <p>&copy; Todos os direitos reservardos</p>
+    </footer>
+</body>
