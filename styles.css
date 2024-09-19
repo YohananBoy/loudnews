@@ -131,14 +131,12 @@ h3 {
 }
 
 .noticias li {
-    display: flex;
-    justify-content: center;
     margin: 20px;
 }
 
 .noticias p {
-    display: flex;
-    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .noticias a {
