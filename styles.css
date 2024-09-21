@@ -464,8 +464,11 @@ h3 {
     .barra {
         width: 270px;
     }
+
     /*GERAL*/
-    .section-contato, .noticias, main{
+    .section-contato,
+    .noticias,
+    main {
         margin-bottom: 100px;
     }
 }
@@ -492,5 +495,5 @@ h3 {
     .barra {
         width: 185px;
     }
-    
+
 }
