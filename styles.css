@@ -438,14 +438,42 @@ h3 {
 
     .contato,
     .informacoes {
-        max-width: 300px;
+        max-width: 500px;
         margin: 0;
     }
 
     .contato form {
-        max-width: 300px;
+        max-width: 500px;
         margin-left: 0;
         margin-bottom: -250px;
+    }
+
+    .informacoes h3 {
+        font-size: 2rem;
+    }
+
+    .informacoes p {
+        font-size: 1.5rem;
+    }
+
+    .imagem img {
+        width: 200px;
+        margin-left: 25px;
+    }
+
+    .barra {
+        width: 270px;
+    }
+    /*GERAL*/
+    .section-contato, .noticias, main{
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .contato form {
+        max-width: 300px;
     }
 
     .informacoes h3 {
@@ -464,8 +492,5 @@ h3 {
     .barra {
         width: 185px;
     }
-    /*GERAL*/
-    .section-contato, .noticias, main{
-        margin-bottom: 100px;
-    }
+    
 }
