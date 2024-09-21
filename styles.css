@@ -492,6 +492,23 @@ h3 {
 
 @media screen and (max-width: 580px) {
 
+        /*WIKI*/
+        .wiki li {
+            max-width: 90px;
+        }
+    
+        .wiki img {
+            width: 90px;
+        }
+
+        .wiki h3 {
+            font-size: .8rem;
+        }
+        
+        .wiki-info p {
+            font-size: .5rem;
+        }
+
      /*CONTATO*/
     .contato form {
         max-width: 300px;
