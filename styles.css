@@ -429,6 +429,23 @@ h3 {
         width: 300px;
     }
 
+    /*WIKI*/
+    .wiki li {
+        max-width: 200px;
+    }
+
+    .wiki img {
+        width: 100px;
+    }
+
+    .wiki h3 {
+        font-size: 1rem;
+    }
+    
+    .wiki-info p {
+        font-size: .7rem;
+    }
+
     /*CONTATO*/
 
     .section-contato {
@@ -475,6 +492,7 @@ h3 {
 
 @media screen and (max-width: 580px) {
 
+     /*CONTATO*/
     .contato form {
         max-width: 300px;
     }
@@ -494,6 +512,14 @@ h3 {
 
     .barra {
         width: 185px;
+    }
+
+    .contato form input {
+        font-size: 1rem;
+    }
+
+    .contato form textarea {
+        font-size: 1.1rem;
     }
 
 }
