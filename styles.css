@@ -3,7 +3,8 @@ preto: rgb(21,21,21);
 amarelin: rgb(223,218,192);
 verdin: rgb(63,205,55);
 */
-@font-face { /* por algum motivo eu tenho que importar essa fonte duas vezes para ela funcionar, nao me pergunte o porque */
+@font-face {
+    /* por algum motivo eu tenho que importar essa fonte duas vezes para ela funcionar, nao me pergunte o porque */
     font-family: 'Tungsten';
     src: url(fontes/FontsFree-Net-Tungsten-Bold.ttf) format('truetype');
     font-weight: normal;
@@ -25,10 +26,10 @@ verdin: rgb(63,205,55);
     font-family: 'DINNextW1G';
     src: url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot");
     src: url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.svg#DINNextW1G-Regular")format("svg");
+        url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.svg#DINNextW1G-Regular")format("svg");
 }
 
 * {
@@ -37,8 +38,8 @@ verdin: rgb(63,205,55);
 }
 
 html {
-    background-color: rgb(21,21,21);
-    color: rgb(223,218,192);
+    background-color: rgb(21, 21, 21);
+    color: rgb(223, 218, 192);
     font-family: 'DINNextW1G';
 }
 
@@ -55,7 +56,7 @@ header figure {
     align-items: center;
 }
 
-header figure img{
+header figure img {
     width: 400px;
 }
 
@@ -75,7 +76,7 @@ header figure img{
 
 .menu a {
     text-decoration: none;
-    color: rgb(223,218,192);
+    color: rgb(223, 218, 192);
     border: transparent 2px solid;
     padding: 10px;
     border-radius: 20px;
@@ -83,15 +84,15 @@ header figure img{
 }
 
 .menu li .destaque {
-    color: rgb(63,205,55);
-    border: rgb(63,205,55) 2px solid;
+    color: rgb(63, 205, 55);
+    border: rgb(63, 205, 55) 2px solid;
     padding: 10px;
     border-radius: 20px;
 }
 
 .menu a:hover {
-    color: rgb(63,205,55);
-    border: rgb(63,205,55) 2px solid;
+    color: rgb(63, 205, 55);
+    border: rgb(63, 205, 55) 2px solid;
 }
 
 h2 {
@@ -110,11 +111,18 @@ h3 {
 .noticias {
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
     margin-bottom: 130px;
 }
 
+.noticias div {
+    margin: 0 auto;
+}
+
 .noticias img {
-    width: 400px;
+    max-width: 400px;
+    min-width: 100px;
+    display: block;
     border-radius: 20px;
     transition: 0.3s;
 }
@@ -125,13 +133,18 @@ h3 {
 
 .noticias ul {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     list-style: none;
+    max-width: 1320px;
+    margin: 0 auto;
 }
 
 .noticias li {
     margin: 20px;
+    width: 400px;
+    flex: 1 1 400px;
 }
 
 .noticias p {
@@ -141,22 +154,27 @@ h3 {
 
 .noticias a {
     text-decoration: none;
-    color: rgb(223,218,192);
+    color: rgb(223, 218, 192);
+}
+
+.wiki {
+    max-width: 1924px;
+    margin: 0 auto;
 }
 
 .wiki h2 {
     margin-left: 50px
 }
 
-.wiki ul{
+.wiki ul {
     margin: 20px;
     list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.wiki h3{
+.wiki h3 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -189,9 +207,15 @@ h3 {
     padding: 10px;
     opacity: 0;
 }
+
 .active div {
     max-height: 300px;
     opacity: 1;
+}
+
+.wiki-historico {
+    max-width: 1924px;
+    margin: 0 auto;
 }
 
 .wiki-historico h2 {
@@ -202,12 +226,14 @@ h3 {
     margin: 20px;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .wiki-historico li {
     margin: 20px;
+    max-width: 317px;
 }
 
 .wiki-historico span {
@@ -215,7 +241,7 @@ h3 {
     padding-top: 2px;
     padding-bottom: 2px;
     margin: 3px;
-    border: rgb(63,205,55) 2px solid;
+    border: rgb(63, 205, 55) 2px solid;
     border-radius: 8px;
 }
 
@@ -230,8 +256,10 @@ h3 {
 .section-contato {
     display: flex;
     align-items: center;
-    align-self: center  ;
+    align-self: center;
     margin-bottom: 300px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .contato {
@@ -245,12 +273,13 @@ h3 {
     margin: 20px;
 }
 
-.contato form input, .contato form textarea {
+.contato form input,
+.contato form textarea {
     margin-top: 5px;
     margin-bottom: 5px;
     background: transparent;
     border: none;
-    border-bottom: rgb(223,218,192) 2px solid;
+    border-bottom: rgb(223, 218, 192) 2px solid;
     padding: 10px;
     transition: .2s;
     color: #fff;
@@ -262,18 +291,19 @@ h3 {
     font-size: 1.6rem;
 }
 
-.contato form input:focus, .contato form textarea:focus {
-    border-bottom: rgb(63,205,55) 3px solid;
+.contato form input:focus,
+.contato form textarea:focus {
+    border-bottom: rgb(63, 205, 55) 3px solid;
 }
 
 .contato form button {
-    font-family: Valorant   ;
+    font-family: Valorant;
     border: transparent 2px solid;
     border-radius: 23px;
     width: 120px;
     padding: 10px;
     background-color: transparent;
-    color: rgb(63,205,55);
+    color: rgb(63, 205, 55);
     transition: 0.2s;
     cursor: pointer;
     font-size: 1.5rem;
@@ -281,13 +311,13 @@ h3 {
 }
 
 .contato form button:hover {
-    border: rgb(63,205,55) 2px solid;
+    border: rgb(63, 205, 55) 2px solid;
 }
 
 .barra {
     height: 2px;
     width: 360px;
-    background-color: rgb(71,71,71);
+    background-color: rgb(71, 71, 71);
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -295,19 +325,147 @@ h3 {
 .barrah {
     height: 300px;
     width: 2px;
-    background-color: rgb(71,71,71);
-    margin-left: 10px;
-    margin-right: 10px;
+    background-color: rgb(71, 71, 71);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .informacoes {
-    margin-left: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.informacoes h3{
+.informacoes h3 {
     font-size: 3rem;
 }
 
 .informacoes p {
     font-size: 2rem;
+}
+
+.imagem img {
+    width: 250px;
+    margin-left: 60px;
+}
+
+@media screen and (max-width: 1540px) {
+
+    /*CONTATO*/
+    .barrah {
+        background: transparent;
+        width: 0;
+        margin: 0;
+    }
+
+    /*NOTICIAS*/
+    .noticias a {
+        display: block;
+    }
+
+    .noticias li,
+    .noticias p,
+    .noticias a {
+        max-width: 400px;
+    }
+
+    .noticias img {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+
+    /*HEADER*/
+    .header {
+        justify-content: space-between;
+    }
+
+    .menu {
+        position: relative;
+        margin-right: 30px;
+    }
+
+}
+
+@media screen and (max-width: 880px) {
+
+    /*HEADER*/
+    .header {
+        flex-direction: column;
+    }
+
+    header figure img {
+        width: 300px;
+    }
+
+    .menu {
+        font-size: 1rem;
+    }
+
+    h2 {
+        margin-top: 100px;
+    }
+
+    /*NOTICIAS*/
+    .noticias {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .noticias a {
+        display: block;
+    }
+
+    .noticias li,
+    .noticias p,
+    .noticias a {
+        max-width: 300px;
+    }
+
+    .noticias img {
+        width: 300px;
+    }
+
+    /*CONTATO*/
+
+    .section-contato {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contato,
+    .informacoes {
+        max-width: 300px;
+        margin: 0;
+    }
+
+    .contato form {
+        max-width: 300px;
+        margin-left: 0;
+        margin-bottom: -250px;
+    }
+
+    .informacoes h3 {
+        font-size: 1.5rem;
+    }
+
+    .informacoes p {
+        font-size: 1rem;
+    }
+
+    .imagem img {
+        width: 100px;
+        margin-left: 15px;
+    }
+
+    .barra {
+        width: 185px;
+    }
+    /*GERAL*/
+    .section-contato, .noticias, main{
+        margin-bottom: 100px;
+    }
 }
