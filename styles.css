@@ -436,11 +436,11 @@ h3 {
 
     /*WIKI*/
     .wiki li {
-        max-width: 100px;
+        max-width: 110px;
     }
 
     .wiki img {
-        width: 100px;
+        width: 110px;
     }
 
     .wiki h3 {
@@ -496,23 +496,6 @@ h3 {
 }
 
 @media screen and (max-width: 580px) {
-
-    /*WIKI*/
-    .wiki li {
-        max-width: 90px;
-    }
-
-    .wiki img {
-        width: 90px;
-    }
-
-    .wiki h3 {
-        font-size: .8rem;
-    }
-
-    .wiki-info p {
-        font-size: .5rem;
-    }
 
     /*CONTATO*/
     .contato form {
