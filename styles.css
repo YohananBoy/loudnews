@@ -3,8 +3,9 @@ preto: rgb(21,21,21);
 amarelin: rgb(223,218,192);
 verdin: rgb(63,205,55);
 */
+
+/* por algum motivo eu tenho que importar essa fonte duas vezes para ela funcionar, nao me pergunte o porque */
 @font-face {
-    /* por algum motivo eu tenho que importar essa fonte duas vezes para ela funcionar, nao me pergunte o porque */
     font-family: 'Tungsten';
     src: url(fontes/FontsFree-Net-Tungsten-Bold.ttf) format('truetype');
     font-weight: normal;
@@ -350,6 +351,10 @@ h3 {
     margin-left: 60px;
 }
 
+.informacoes address {
+    font-style: normal;
+}
+
 @media screen and (max-width: 1540px) {
 
     /*CONTATO*/
@@ -441,7 +446,7 @@ h3 {
     .wiki h3 {
         font-size: 1rem;
     }
-    
+
     .wiki-info p {
         font-size: .7rem;
     }
@@ -492,24 +497,24 @@ h3 {
 
 @media screen and (max-width: 580px) {
 
-        /*WIKI*/
-        .wiki li {
-            max-width: 90px;
-        }
-    
-        .wiki img {
-            width: 90px;
-        }
+    /*WIKI*/
+    .wiki li {
+        max-width: 90px;
+    }
 
-        .wiki h3 {
-            font-size: .8rem;
-        }
-        
-        .wiki-info p {
-            font-size: .5rem;
-        }
+    .wiki img {
+        width: 90px;
+    }
 
-     /*CONTATO*/
+    .wiki h3 {
+        font-size: .8rem;
+    }
+
+    .wiki-info p {
+        font-size: .5rem;
+    }
+
+    /*CONTATO*/
     .contato form {
         max-width: 300px;
     }
