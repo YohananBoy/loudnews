@@ -4,10 +4,10 @@
 
 ###
 
+<h3 align="left">Seja bem vindo ao Loud News! O melhor hub de informações sobre a Loud.</h3>
+
+###
 <ul>
-  <li>
-    <p align="left">Seja bem vindo ao Loud News! O melhor hub de informações sobre a Loud.</p>
-  </li>
   <li>
     <p align="left">Fique por dentro de <strong>TODAS AS NOTÍCIAS</strong> mais recentes</p>
   </li>
@@ -19,7 +19,7 @@
 ###
 
 <div align="left">
-  <img height="930" src="https://i.imgur.com/OUQPZsE.jpeg"  />
+  <img height="930" border-radius="20px" src="https://i.imgur.com/OUQPZsE.jpeg"  />
 </div>
 
 ###
