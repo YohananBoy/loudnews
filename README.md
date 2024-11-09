@@ -24,6 +24,6 @@
 
 ###
 
-<p align="left">&copy Loud</p>
+<p align="left">&copy 2024 LOUD</p>
 
 ###
