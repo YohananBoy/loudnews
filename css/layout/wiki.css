@@ -23,6 +23,7 @@
 .wiki section {
     margin-left: 60px;
     padding: 30px 0;
+    width: 90%;
 }
 
 .wiki__li,
