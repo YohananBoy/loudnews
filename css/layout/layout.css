@@ -64,13 +64,8 @@ body {
     border: 1px solid rgb(71, 71, 71);
 }
 
-.barra--vertical {
-    width: 0;
-    height: 450px;
-}
-
 .barra--pequena {
-    width: 468px;
+    max-width: 468px;
     margin: 10px 0;
 }
 
@@ -83,6 +78,7 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 60px;
 }
 
 header img {

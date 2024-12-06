@@ -1,0 +1,40 @@
+@media screen and (max-width: 1200px) {
+
+    /*header*/
+    header .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /*wiki*/
+    .wiki .wiki__historico li {
+        flex: 0 0 calc(50% - 11px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /*wiki*/
+    .wiki__li,
+    .wiki .wiki__li img {
+        width: 150px;
+        height: auto;
+    }
+
+    .wiki .wiki__historico li {
+        flex: 0 0 100%;
+    }
+
+    .wiki .wiki__historico ul::-webkit-scrollbar {
+        display: none;
+    }
+
+    /*contato*/
+    .contato .contato__info h3 {
+        font-size: 2.2rem;
+    }
+
+    .contato .contato__info p {
+        font-size: 1.5rem;
+    }
+}

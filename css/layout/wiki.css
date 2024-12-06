@@ -40,11 +40,26 @@
     cursor: pointer;
 }
 
+.wiki__li h3 {
+    text-shadow: 3px 3px rgba(63, 205, 55, 0.5);
+}
+
 .wiki__info {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
     transition: all .5s ease-in-out;
+}
+
+.wiki__info h3 {
+    color: var(--corPrincipal);
+    text-shadow: 3px 3px rgba(63, 205, 55, 0.2);
+}
+
+.wiki__info h3::first-letter {
+    font-family: var(--fonteTitulo);
+    color: var(--corPrincipal);
+    font-size: 1.8rem;
 }
 
 main .wiki__historico {
@@ -57,19 +72,45 @@ main .wiki__historico {
 }
 
 .wiki__historico ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 15px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; 
     padding: 30px 0 0 0;
 }
 
+.wiki__historico ul::-webkit-scrollbar {
+    width: 20px;
+}
+
+.wiki__historico ul::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.wiki__historico ul::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
 .wiki__historico li {
+    display: flex;
+    flex: 0 0 calc(33.33% - 12px);
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     margin-bottom: 20px;
+    scroll-snap-align: start;
 }
 
 .wiki__historico img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
+    aspect-ratio: 4/3;
     object-fit: cover;
     object-position: center;
     border-radius: 10px;
@@ -82,9 +123,19 @@ main .wiki__historico {
     font-family: var(--fonteSubtitulo);
     font-size: 2rem;
     border-left: var(--corPrincipal) 2px solid;
+    border-radius: 4px;
 }
 
-.wiki__historico h3,
+.wiki__historico h3 {
+    font-size: 2.2rem;
+    letter-spacing: 0.01rem;
+    margin: 15px 0 0 0;
+}
+
 .wiki__historico p {
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--corPrincipal);
+    border-radius: 10px;
+    padding: 5px;
     margin: 5px 0;
 }
