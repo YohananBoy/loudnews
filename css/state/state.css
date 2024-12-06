@@ -1,0 +1,49 @@
+:root {
+    --corPrincipal: rgb(63, 205, 55);
+    --corSecundaria: rgb(223, 218, 192);
+    --corTerciaria: rgb(21, 21, 21);
+    --corTexto: #fff;
+    --fonteGeral: 'DINNextW1G';
+    --fonteTitulo: 'Valorant';
+    --fonteSubtitulo: 'Tungsten';
+}
+
+nav a:hover {
+    color: var(--corPrincipal);
+    transform: scale(1.05);
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.noticias a:hover {
+    transform: scale(1.05);
+    transition: all .3s ease;
+}
+
+.wiki-img:hover {
+    transform: scale(1.05);
+    
+}
+
+.active div {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.contato__form form input:focus, .contato__form form textarea:focus {
+    border-bottom: var(--corPrincipal) 3px solid;
+    transition: border-color .4s ease-out;
+}
+
+.contato__form button:hover {
+    border-color: var(--corPrincipal);
+    color: var(--corPrincipal);
+    transition: all .3s ease;
+}
+
+.contato__form button:active {
+    color: #fff;
+    background-color: var(--corPrincipal);
+    transition: all .2s ease;
+}

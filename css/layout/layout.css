@@ -1,0 +1,141 @@
+/*geral*/
+@font-face {
+    font-family: 'Tungsten';
+    src: url(../../fontes/FontsFree-Net-Tungsten-Bold.ttf) format('truetype');
+    font-weight: normal;
+    letter-spacing: 0.2rem;
+}
+
+@font-face {
+    font-family: 'Valorant';
+    src: url(../../fontes/Valorant-Font.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'DINNextW1G';
+    src: url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot");
+    src: url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/7bb508fd7255ec38b6f29cb4cf8668cf.svg#DINNextW1G-Regular")format("svg");
+}
+
+:root {
+    --corPrincipal: rgb(63, 205, 55);
+    --corSecundaria: rgb(223, 218, 192);
+    --corTerciaria: rgb(21, 21, 21);
+    --corTexto: #fff;
+    --fonteGeral: 'DINNextW1G';
+    --fonteTitulo: 'Valorant';
+    --fonteSubtitulo: 'Tungsten';
+}
+
+* {
+    color: var(--corTexto);
+    font-family: var(--fonteGeral);
+}
+
+h1,
+h2 {
+    font-family: var(--fonteTitulo);
+    color: var(--corSecundaria);
+}
+
+h3 {
+    font-family: var(--fonteSubtitulo);
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: var(--corSecundaria);
+}
+
+body {
+    background-color: var(--corTerciaria);
+}
+
+.container {
+    width: 67.5%;
+    margin: 0 auto;
+}
+
+.barra {
+    width: 100%;
+    border: 1px solid rgb(71, 71, 71);
+}
+
+.barra--vertical {
+    width: 0;
+    height: 450px;
+}
+
+.barra--pequena {
+    width: 468px;
+    margin: 10px 0;
+}
+
+/*header*/
+header {
+    padding: 40px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 400px;
+}
+
+nav {
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+nav a {
+    display: block;
+    font-family: var(--fonteTitulo);
+    color: var(--corSecundaria);
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+nav a[href="#"] {
+    color: var(--corPrincipal);
+    transform: scale(1.05);
+    transition: .3s all ease;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+/*main*/
+main {
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 40px 0;
+}
+
+/*footer*/
+footer {
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+}
+/*section*/
+section {
+    width: 100%;
+}

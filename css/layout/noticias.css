@@ -1,0 +1,21 @@
+.noticias ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.noticias a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noticias img {
+    border-radius: 10px;
+}
+
+.noticias p {
+    margin: 5px 0;
+}

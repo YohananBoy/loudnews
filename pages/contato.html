@@ -26,34 +26,30 @@
 
     <!-- Meta Tags Generated with https://metatags.io -->
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/layout/contato.css">
 </head>
 
 <body>
     <header>
-        <div class="header">
-            <figure>
-                <img src="imagens/logo.png" alt="Loud News Logo">
-            </figure>
+        <div class="container">
+            <img src="../img/logo.png" alt="Logo Loud News">
 
-            <div class="centro">
-                <nav class="menu">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="wiki.html">Wiki</a></li>
-                        <li><a href="#" class="destaque">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="wiki.html">Wiki</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <div class="barra-nav"></div>
+    <div class="barra"></div>
 
-    <main>
-        <h2>Fale Conosco</h2>
-        <section class="section-contato">
-            <div class="contato">
+    <main class="contato">
+        <div class="container">
+            <div class="contato__form">
                 <form action="#">
                     <input type="text" placeholder="Nome" name="nome" id="nome">
                     <input type="email" placeholder="Email" name="email" id="email">
@@ -62,31 +58,29 @@
                     <button type="submit">Enviar</button>
                 </form>
             </div>
-
-            <div class="barrah"></div>
-
-            <div class="informacoes">
+    
+            <div class="barra barra--vertical"></div>
+    
+            <div class="contato__info">
                 <address>
                     <h3>Yohanan Boy</h3>
-                    <p>14911025786@cefet-rj.br</p>
-                    <div class="barra"></div>
+                    <p>yohanan.santos@aluno.cefet-rj.br</p>
+                    <div class="barra barra--pequena"></div>
                     <h3>CEFET-RJ</h3>
-                    <p>Nova Friburgo,</p>
-                    <p>Rio de Janeiro</p>
+                    <p>Nova Friburgo, Rio de Janeiro</p>
                 </address>
-
-                <figure class="imagem">
-                    <img src="imagens/LOUD-branco.png" alt="Logo LOUD Branco">
-                </figure>
+    
+                <img src="../img/LOUD-branco.png" alt="Logo LOUD Branco">
             </div>
-
-        </section>
+        </div>
     </main>
 
-    <div class="barra-nav"></div>
+    <div class="barra"></div>
 
     <footer>
-        <p>&copy; Todos os direitos reservardos</p>
+        <div class="container">
+            <p>&copy; 2024 LOUD & CEFET/RJ</p>
+        </div>
     </footer>
 </body>
 

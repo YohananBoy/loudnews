@@ -4,6 +4,8 @@ amarelin: rgb(223,218,192);
 verdin: rgb(63,205,55);
 */
 
+@import url(css/base/normalize.css);
+
 /* por algum motivo eu tenho que importar essa fonte duas vezes para ela funcionar, nao me pergunte o porque */
 @font-face {
     font-family: 'Tungsten';

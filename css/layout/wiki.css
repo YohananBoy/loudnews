@@ -1,0 +1,90 @@
+:root {
+    --corPrincipal: rgb(63, 205, 55);
+    --corSecundaria: rgb(223, 218, 192);
+    --corTerciaria: rgb(21, 21, 21);
+    --corTexto: #fff;
+    --fonteGeral: 'DINNextW1G';
+    --fonteTitulo: 'Valorant';
+    --fonteSubtitulo: 'Tungsten';
+}
+
+.wiki h3 {
+    margin-bottom: 10px;
+}
+
+.wiki ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.wiki section {
+    margin-left: 60px;
+    padding: 30px 0;
+}
+
+.wiki__li,
+.wiki__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 0;
+}
+
+.wiki__li img {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.wiki__info {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+main .wiki__historico {
+    padding-top: 0;
+    text-align: center;
+}
+
+.wiki__historico h2 {
+    text-align: left;
+}
+
+.wiki__historico ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 15px;
+    padding: 30px 0 0 0;
+}
+
+.wiki__historico li {
+    margin-bottom: 20px;
+}
+
+.wiki__historico img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+.wiki__historico span {
+    padding: 0 7px;
+    margin: 3px;
+    color: var(--corPrincipal);
+    font-family: var(--fonteSubtitulo);
+    font-size: 2rem;
+    border-left: var(--corPrincipal) 2px solid;
+}
+
+.wiki__historico h3,
+.wiki__historico p {
+    margin: 5px 0;
+}
