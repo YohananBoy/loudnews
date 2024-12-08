@@ -6,16 +6,23 @@
     margin-top: 40px;
 }
 
-.noticias a{
+.noticias a {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.noticias li a>* {
+    max-width: 400px;
+    width: 90vw;
+}
+
 .noticias img {
+    width: 100%;
     border-radius: 10px;
 }
 
 .noticias p {
+    display: inline;
     margin: 5px 0;
 }

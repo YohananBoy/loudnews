@@ -33,6 +33,7 @@
     align-items: center;
     justify-content: flex-start;
     padding: 30px 0;
+    text-align: center;
 }
 
 .wiki__li img {
@@ -100,8 +101,6 @@ main .wiki__historico {
 .wiki__historico li {
     display: flex;
     flex: 0 0 calc(33.33% - 12px);
-    flex-grow: 1;
-    flex-shrink: 0;
     flex-direction: column;
     align-items: center;
     text-align: center;

@@ -15,9 +15,23 @@
 @media screen and (max-width: 768px) {
 
     /*wiki*/
-    .wiki__li,
+    .wiki ul:first-of-type {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        scroll-snap-type: x mandatory;
+    }
+
+    .wiki__li {
+        scroll-snap-align: start;
+    }
+
+    .wiki__li {
+        flex: 1 0 100%;
+    }
+
     .wiki .wiki__li img {
-        width: 150px;
+        width: 100%;
         height: auto;
     }
 
@@ -30,11 +44,39 @@
     }
 
     /*contato*/
+    .contato .contato__form {
+        margin: 0;
+    }
+
     .contato .contato__info h3 {
         font-size: 2.2rem;
     }
 
     .contato .contato__info p {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    /*header*/
+    header nav a {
+        font-size: 1.2rem;
+    }
+
+    /*geral*/
+    main section,
+    main.wiki section {
+        margin-left: 0;
+    }
+
+    /*noticias*/
+    .noticias ul img {
+        width: 85%;
+    }
+
+    /*contato*/
+    .contato__info {
+        width: 100%;
     }
 }

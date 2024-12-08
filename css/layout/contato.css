@@ -20,9 +20,9 @@
 
 .contato__form {
     max-width: 600px;
-    min-width: 400px;
     width: 100%;
     margin: 20px;
+    flex: 1 1 400px;
 }
 
 .contato__form form {
@@ -32,7 +32,8 @@
     gap: 15px;
 }
 
-.contato__form form input, .contato__form form textarea {
+.contato__form form input,
+.contato__form form textarea {
     background-color: transparent;
     border: none;
     border-bottom: var(--corSecundaria) 2px solid;
@@ -41,7 +42,8 @@
     font-size: 1.5rem;
 }
 
-.contato__form form input::placeholder, .contato__form form textarea::placeholder {
+.contato__form form input::placeholder,
+.contato__form form textarea::placeholder {
     font-size: 1.5rem;
 }
 
@@ -65,10 +67,11 @@
     gap: 30px;
 }
 
-.contato__info address{
+.contato__info address {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 100%;
 }
 
 .contato__info h3 {
@@ -77,5 +80,7 @@
 
 .contato__info p {
     font-size: 2rem;
-    width: max-content;
+    width: 100%;
+    word-wrap: break-word;
+    word-break: break-word;
 }

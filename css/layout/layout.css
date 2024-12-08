@@ -82,7 +82,8 @@ header .container {
 }
 
 header img {
-    width: 400px;
+    max-width: 400px;
+    width: 90vw;
 }
 
 nav {
@@ -94,7 +95,9 @@ justify-content: center;
 nav ul {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    max-width: 500px;
+    width: 90vw;
+    justify-content: space-between;
 }
 
 nav a {
