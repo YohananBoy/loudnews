@@ -39,7 +39,7 @@
         flex: 0 0 100%;
     }
 
-    .wiki .wiki__historico ul::-webkit-scrollbar {
+    .wiki ul::-webkit-scrollbar {
         display: none;
     }
 
