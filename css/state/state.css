@@ -24,15 +24,17 @@ nav a:hover {
 .wiki-img:hover {
     transform: scale(1.05);
     transition: transform .2s ease;
-    
+
 }
 
 .active div {
     max-height: 300px;
     opacity: 1;
+    transition: all .5s ease-in-out;
 }
 
-.contato__form form input:focus, .contato__form form textarea:focus {
+.contato__form form input:focus,
+.contato__form form textarea:focus {
     border-bottom: var(--corPrincipal) 3px solid;
     transition: border-color .4s ease-out;
 }

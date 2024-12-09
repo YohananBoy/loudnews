@@ -7,6 +7,19 @@
     }
 
     /*wiki*/
+    main.wiki section:first-of-type ul {
+        flex-wrap: wrap;
+    }
+
+    .wiki .wiki__li {
+        flex: 0 0 0;
+    }
+
+    .wiki .wiki__li img {
+        width: 200px;
+        height: 200px;
+    }
+
     .wiki .wiki__historico li {
         flex: 0 0 calc(50% - 11px);
     }
@@ -22,11 +35,11 @@
         scroll-snap-type: x mandatory;
     }
 
-    .wiki__li {
+    .wiki .wiki__li {
         scroll-snap-align: start;
     }
 
-    .wiki__li {
+    .wiki .wiki__li {
         flex: 1 0 100%;
     }
 
