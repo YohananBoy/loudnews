@@ -1,5 +1,4 @@
 @media screen and (max-width: 1200px) {
-
     /*header*/
     header .container {
         flex-direction: column;
@@ -19,16 +18,11 @@
         width: 200px;
         height: 200px;
     }
-
-    .wiki .wiki__historico li {
-        flex: 0 0 calc(50% - 11px);
-    }
 }
 
 @media screen and (max-width: 768px) {
-
     /*wiki*/
-    .wiki ul:first-of-type {
+    main.wiki section:first-of-type ul:first-of-type {
         flex-direction: row;
         flex-wrap: nowrap;
         overflow-x: scroll;
@@ -48,12 +42,21 @@
         height: auto;
     }
 
-    .wiki .wiki__historico li {
-        flex: 0 0 100%;
-    }
-
     .wiki ul::-webkit-scrollbar {
         display: none;
+    }
+
+    .wiki .carousel-caption {
+        padding: 5px;
+    }
+
+    .wiki .carousel-caption h3,
+    main.wiki .wiki__historico .carousel-caption span {
+        font-size: 1.4rem;
+    }
+
+    .wiki .carousel-caption p {
+        font-size: 1rem;
     }
 
     /*contato*/
@@ -71,7 +74,6 @@
 }
 
 @media screen and (max-width: 480px) {
-
     /*header*/
     header nav a {
         font-size: 1.2rem;
@@ -91,5 +93,17 @@
     /*contato*/
     .contato__info {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    /*wiki*/
+    .wiki .carousel-caption h3,
+    main.wiki .wiki__historico .carousel-caption span {
+        font-size: 1rem;
+    }
+
+    .wiki .carousel-caption p {
+        font-size: 0.6rem;
     }
 }

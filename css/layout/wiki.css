@@ -3,9 +3,9 @@
     --corSecundaria: rgb(223, 218, 192);
     --corTerciaria: rgb(21, 21, 21);
     --corTexto: #fff;
-    --fonteGeral: 'DINNextW1G';
-    --fonteTitulo: 'Valorant';
-    --fonteSubtitulo: 'Tungsten';
+    --fonteGeral: "DINNextW1G";
+    --fonteTitulo: "Valorant";
+    --fonteSubtitulo: "Tungsten";
 }
 
 .wiki h3 {
@@ -40,7 +40,7 @@
 .wiki__li {
     flex: 1 1 20%;
     justify-content: start;
-}   
+}
 
 .wiki__li img {
     width: 100%;
@@ -64,7 +64,7 @@
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: all .5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .wiki__info h3 {
@@ -130,7 +130,8 @@ main .wiki__historico {
     border-radius: 10px;
 }
 
-.wiki__historico span {
+.wiki__historico
+    span:not(.carousel-control-prev-icon):not(.carousel-control-next-icon) {
     padding: 0 7px;
     margin: 3px;
     color: var(--corPrincipal);
@@ -152,4 +153,18 @@ main .wiki__historico {
     border-radius: 10px;
     padding: 5px;
     margin: 5px 0;
+    width: fit-content;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    width: fit-content;
+    padding: 20px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
