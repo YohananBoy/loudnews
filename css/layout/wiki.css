@@ -87,41 +87,6 @@ main .wiki__historico {
     text-align: left;
 }
 
-.wiki__historico ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 15px;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    padding: 30px 0 0 0;
-}
-
-.wiki__historico ul::-webkit-scrollbar {
-    width: 20px;
-}
-
-.wiki__historico ul::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.wiki__historico ul::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
-    border: 3px solid rgba(0, 0, 0, 0.3);
-}
-
-.wiki__historico li {
-    display: flex;
-    flex: 0 0 calc(33.33% - 12px);
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 20px;
-    scroll-snap-align: start;
-}
-
 .wiki__historico img {
     width: 100%;
     aspect-ratio: 4/3;
